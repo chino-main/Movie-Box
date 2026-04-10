@@ -1,0 +1,323 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+:root{
+    --primary-color: #2c3440;
+    --secondary-color: #333333;
+    --accent-color: #30a858;
+    --secondary-accent-color: rgb(223, 239, 255);
+    --background-color: #14181c;
+    --text-color: #9ab;
+    --secondary-text-color: #fff;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "DM Sans", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    height: 100vh;
+
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    height: 10%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#h1-header{
+    font-size: large;
+}
+
+.add-movie-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 5rem;
+    margin-bottom: 3em;
+}
+
+.add-movie-container button:hover{
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+}
+.section-heading{
+    margin: 3rem 0 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+}
+
+.section-heading h2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.table-column{
+    font-weight: bold;
+    background-color: #252525;
+}
+
+#table-movies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #333333;
+   
+}
+
+th{
+    padding: 12px;
+    border-bottom: 1px solid var(--primary-color);
+    font-weight: 300;
+}
+
+tbody tr{
+    font-weight: 300;
+}
+tbody tr:hover{
+    background-color: var(--primary-color);
+}
+
+button{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    padding:12px;
+    border-radius:64px;
+    border:none;
+    cursor:pointer;
+    background-color: #252525;
+    color: var(--text-color);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.delete-button:hover{
+    color: #ca0e0e;
+}
+
+.edit-button:hover, .close-button:hover{
+    color: var(--secondary-accent-color);
+}
+
+#form-add-movie{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+form input{
+    margin: 0 8px 4px 8px;
+    padding: 8px;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.title-form{
+    margin-bottom: -10px;
+}
+
+form input[type="submit"]{
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#submit-button{
+    font-weight: bold;
+}
+
+#edit-dialog , #add-dialog {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    width: 300px;
+}
+
+dialog .dialog-header {
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+    justify-content: center;
+    height: 1em;
+}
+
+#close-dialog {
+    display: flex;
+    justify-content: flex-end;
+}
+
+dialog .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    padding:12px;
+    border-radius:64px;
+    background-color: #252525;
+    color: var(--text-color);
+}
+     
+dialog form {
+    display: flex;
+    flex-direction: column;
+}
+
+dialog input {
+    margin-bottom: 4px;
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+dialog input[type="submit"] {
+    margin: 16px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+dialog input[type="submit"]:hover {
+    background-color: var(--accent-color);
+}
+
+
+form p {
+    margin: 8px 0 4px 0;
+    color: var(--text-color);
+    
+}
+
+#delete-dialog{
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    width: fit-content;
+}
+.delete-dialog-header{
+    color: var(--text-color);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.delete-dialog-header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#delete-dialog-content{
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+.delete-buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.delete-buttons button{
+    padding: 12px 20px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-buttons button:hover{
+    color: var(--secondary-text-color);
+    
+}
+#confirm-delete-button:hover
+{
+    background-color: #ca0e0e;
+    color: var(--secondary-text-color);
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+dialog[open] {
+    animation: entry 0.3s ease-out forwards;
+}
+
+/* Animación para el fondo oscuro */
+dialog[open]::backdrop {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+dialog.closing {
+    animation: exit 0.3s ease-in forwards;
+}
+
+dialog.closing::backdrop {
+    animation: fadeOut 0.3s ease-in forwards;
+}
+
+/* --- KEYFRAMES --- */
+@keyframes entry {
+    from { opacity: 0; transform: scale(0.8); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes exit {
+    from { opacity: 1; transform: scale(1); }
+    to   { opacity: 0; transform: scale(0.5); }
+}
+
+@keyframes fadeIn {
+    from { background: rgba(0,0,0,0); }
+    to   { background: rgba(0,0,0,0.5); }
+}
+
+@keyframes fadeOut {
+    from { background: rgba(0,0,0,0.5); }
+    to   { background: rgba(0,0,0,0); }
+}
