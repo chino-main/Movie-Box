@@ -9,7 +9,7 @@ $conn = connection();
 
 <form id="add-movie-form" action="/moviesCrud/back-end/models/insert_movie.php" method="POST">
     <p>Título:</p>
-    <input type="text" name= "tittle" placeholder="Titulo" required>
+    <input type="text" name= "title" placeholder="Titulo" required>
     <p>Género:</p>
     <input type="text" name= "genre" placeholder="Genero" required>
         <option value="Drama"></option>

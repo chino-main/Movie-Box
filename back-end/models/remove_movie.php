@@ -15,7 +15,7 @@ header('Content-Type: text/html; charset=utf-8');
 
 <div id="delete-dialog-content">
     <div class="delete-dialog-message">
-        <p>¿Quieres borrar "<?= $row['tittle'] ?>"?</p>
+        <p>¿Quieres borrar "<?= $row['title'] ?>"?</p>
     </div>
     <div class="delete-buttons">
         <button id="confirm-delete-button" onclick="confirmDelete(<?= $id ?>)">Sí</button>

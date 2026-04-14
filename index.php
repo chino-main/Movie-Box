@@ -50,7 +50,7 @@ $query = mysqli_query($conn, $sql);
                     <?php while($row = mysqli_fetch_array($query)): ?>
                     <tr>
                         <th><?= $row['id'] ?></th>
-                        <th><?= $row['tittle']?></th>
+                        <th><?= $row['title']?></th>
                         <th><?= $row['genre']?></th>
                         <th><?= $row['year']?></th>
                         <th><?= $row['score']?></th>

@@ -5,12 +5,12 @@ include("../../config/connection.php");
 $conn = connection();
 
 $id = $_POST['id'];
-$tittle = $_POST['tittle'];
+$title = $_POST['title'];
 $genre = $_POST['genre'];
 $year = $_POST['year'];
 $score = $_POST['score'];
 $comments = $_POST['comments'];
-$sql = "UPDATE movies SET tittle='$tittle', genre='$genre', year='$year', score='$score', comments='$comments' WHERE id='$id'";
+$sql = "UPDATE movies SET title='$title', genre='$genre', year='$year', score='$score', comments='$comments' WHERE id='$id'";
 $query = mysqli_query($conn, $sql);
 
 header('Content-Type: application/json');

@@ -16,7 +16,7 @@ header('Content-Type: text/html; charset=utf-8');
 <form id="edit-movie-form">
     <input type="hidden" name="id" value="<?= $row['id'] ?>">
     <p>Título:</p>
-    <input type="text" name="tittle" placeholder="Titulo" value="<?= $row['tittle'] ?>" required>
+    <input type="text" name="title" placeholder="Titulo" value="<?= $row['title'] ?>" required>
     <p>Género:</p>
     <input type="text" list="genres" name="genre" placeholder="Genero" value="<?= $row['genre'] ?>"required>
     <datalist id="genres">

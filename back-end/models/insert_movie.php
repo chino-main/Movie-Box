@@ -4,13 +4,13 @@ include("../../config/connection.php");
 $conn = connection();
 
 $id = null;
-$tittle = $_POST['tittle'];
+$title = $_POST['title'];
 $genre = $_POST['genre'];
 $year = $_POST['year'];
 $score = $_POST['score'];
 $comments = $_POST['comments'];
 
-$sql = "INSERT INTO movies VALUES ('$id', '$tittle', '$genre', '$year', '$score', '$comments')";
+$sql = "INSERT INTO movies VALUES ('$id', '$title', '$genre', '$year', '$score', '$comments')";
 $query = mysqli_query($conn, $sql);
 
 
